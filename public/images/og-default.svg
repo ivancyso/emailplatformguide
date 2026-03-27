@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d1b69;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Subtle decorative circles -->
+  <circle cx="150" cy="500" r="200" fill="#4facfe" opacity="0.05" />
+  <circle cx="1050" cy="130" r="250" fill="#a78bfa" opacity="0.05" />
+  <circle cx="600" cy="315" r="350" fill="#6366f1" opacity="0.03" />
+
+  <!-- Envelope icon -->
+  <g transform="translate(540, 180)" opacity="0.9">
+    <rect x="0" y="10" width="120" height="80" rx="8" ry="8" fill="none" stroke="url(#accent)" stroke-width="3" />
+    <polyline points="0,18 60,60 120,18" fill="none" stroke="url(#accent)" stroke-width="3" />
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="340" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="64" fill="#ffffff">
+    EmailToolsGuide
+  </text>
+
+  <!-- Accent line -->
+  <rect x="450" y="365" width="300" height="3" rx="2" fill="url(#accent)" />
+
+  <!-- Subtitle -->
+  <text x="600" y="420" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="28" fill="#c4b5fd">
+    Honest Email Marketing Reviews &amp; Comparisons
+  </text>
+</svg>

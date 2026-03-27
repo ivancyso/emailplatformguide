@@ -1,0 +1,32 @@
+---
+// Newsletter signup component
+// TODO: Replace form action="#" with actual email service provider endpoint
+// (e.g., Mailchimp, ConvertKit, Beehiiv, etc.)
+---
+
+<div class="bg-primary/5 border border-primary/20 rounded-xl p-8 md:p-10 text-center">
+  <h2 class="text-2xl md:text-3xl font-bold mb-2">
+    Get the Best Email Marketing Tips
+  </h2>
+  <p class="text-text-muted mb-6 max-w-lg mx-auto">
+    Join our newsletter for weekly tool reviews, tips, and exclusive deals.
+  </p>
+  <form action="#" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="you@example.com"
+      class="flex-1 px-4 py-3 rounded-lg border border-border bg-white text-text placeholder:text-text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all"
+    />
+    <button
+      type="submit"
+      class="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors shrink-0"
+    >
+      Subscribe
+    </button>
+  </form>
+  <p class="text-xs text-text-muted mt-4">
+    No spam, ever. Unsubscribe anytime.
+  </p>
+</div>
