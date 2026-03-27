@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('articles'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  title="EmailToolsGuide - Honest Email Marketing Software Reviews"
+  description="In-depth reviews, comparisons, and guides to help you choose the best email marketing software for your business. Tested by experts."
+>
+  <section class="max-w-5xl mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Find the <span class="text-primary">Right Email Marketing Tool</span>
+      </h1>
+      <p class="text-lg text-text-muted max-w-2xl mx-auto">
+        Honest, hands-on reviews and comparisons of the top email marketing platforms. No fluff, no bias — just what works.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      {articles.map((article) => (
+        <ArticleCard
+          title={article.data.title}
+          description={article.data.description}
+          slug={article.id}
+          pubDate={article.data.pubDate}
+          category={article.data.category}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

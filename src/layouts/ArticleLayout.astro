@@ -1,0 +1,131 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
+import RatingBox from '../components/RatingBox.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  category: string;
+  tags: string[];
+  author: string;
+  rating?: number;
+  pros?: string[];
+  cons?: string[];
+  affiliateLinks?: { name: string; url: string; commission?: string }[];
+}
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  category,
+  tags,
+  author,
+  rating,
+  pros,
+  cons,
+  affiliateLinks = [],
+} = Astro.props;
+
+const isReview = category === 'review' && rating !== undefined;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': isReview ? 'Review' : 'Article',
+  headline: title,
+  description,
+  datePublished: pubDate.toISOString(),
+  ...(updatedDate && { dateModified: updatedDate.toISOString() }),
+  author: { '@type': 'Organization', name: 'EmailToolsGuide' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'EmailToolsGuide',
+    url: 'https://emailtoolsguide.com',
+  },
+  ...(isReview && {
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: rating,
+      bestRating: 10,
+      worstRating: 1,
+    },
+  }),
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  type="article"
+  publishDate={pubDate}
+  modifiedDate={updatedDate}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <article class="max-w-3xl mx-auto px-4 py-8">
+    <header class="mb-8">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="inline-block bg-primary/10 text-primary text-xs font-semibold px-2.5 py-1 rounded-full uppercase">
+          {category}
+        </span>
+        <time class="text-sm text-text-muted" datetime={pubDate.toISOString()}>
+          {pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </time>
+        {updatedDate && (
+          <span class="text-sm text-text-muted">
+            (Updated: {updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })})
+          </span>
+        )}
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-4">{title}</h1>
+      <p class="text-lg text-text-muted">{description}</p>
+    </header>
+
+    <AffiliateDisclosure />
+
+    {isReview && rating && pros && cons && (
+      <RatingBox rating={rating} pros={pros} cons={cons} />
+    )}
+
+    <div class="prose prose-lg max-w-none
+      prose-headings:text-text prose-headings:font-bold
+      prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+      prose-img:rounded-lg
+      prose-table:border prose-table:border-border
+      prose-th:bg-surface prose-th:p-3 prose-th:text-left
+      prose-td:p-3 prose-td:border-t prose-td:border-border">
+      <slot />
+    </div>
+
+    {affiliateLinks.length > 0 && (
+      <aside class="mt-12 p-6 bg-white rounded-xl border border-border">
+        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+        <div class="grid gap-3">
+          {affiliateLinks.map(link => (
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="flex items-center justify-between p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all"
+            >
+              <span class="font-medium">{link.name}</span>
+              <span class="text-sm text-primary font-semibold">Visit Site &rarr;</span>
+            </a>
+          ))}
+        </div>
+      </aside>
+    )}
+
+    <div class="mt-8 flex flex-wrap gap-2">
+      {tags.map(tag => (
+        <span class="bg-surface border border-border text-text-muted text-xs px-3 py-1 rounded-full">
+          {tag}
+        </span>
+      ))}
+    </div>
+  </article>
+</BaseLayout>

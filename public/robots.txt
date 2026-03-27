@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://emailtoolsguide.com/sitemap-index.xml

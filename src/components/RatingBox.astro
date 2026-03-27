@@ -1,0 +1,50 @@
+---
+interface Props {
+  rating: number;
+  pros: string[];
+  cons: string[];
+}
+
+const { rating, pros, cons } = Astro.props;
+
+const ratingColor = rating >= 8 ? 'text-green-600 bg-green-50 border-green-200'
+  : rating >= 6 ? 'text-yellow-600 bg-yellow-50 border-yellow-200'
+  : 'text-red-600 bg-red-50 border-red-200';
+---
+
+<div class="mb-8 p-6 bg-white rounded-xl border border-border">
+  <div class="flex items-center gap-4 mb-4">
+    <div class={`text-3xl font-bold px-4 py-2 rounded-lg border ${ratingColor}`}>
+      {rating}/10
+    </div>
+    <div>
+      <div class="font-semibold text-lg">Our Rating</div>
+      <div class="text-sm text-text-muted">Based on hands-on testing</div>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <div>
+      <h4 class="font-semibold text-green-700 mb-2">Pros</h4>
+      <ul class="space-y-1">
+        {pros.map(pro => (
+          <li class="flex items-start gap-2 text-sm">
+            <span class="text-green-500 mt-0.5">+</span>
+            <span>{pro}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold text-red-700 mb-2">Cons</h4>
+      <ul class="space-y-1">
+        {cons.map(con => (
+          <li class="flex items-start gap-2 text-sm">
+            <span class="text-red-500 mt-0.5">-</span>
+            <span>{con}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>
