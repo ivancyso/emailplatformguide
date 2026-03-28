@@ -9,7 +9,7 @@ affiliateLinks:
   - name: "Kit (ConvertKit)"
     url: "https://kit.com"
   - name: "MailerLite"
-    url: "https://www.mailerlite.com"
+    url: "https://www.mailerlite.com/?linkId=lp_170762&sourceId=2loxzatxsy&tenantId=mailerlite"
   - name: "AWeber"
     url: "https://www.aweber.com"
   - name: "Brevo"

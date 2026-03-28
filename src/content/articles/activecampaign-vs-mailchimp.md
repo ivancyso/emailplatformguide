@@ -7,9 +7,9 @@ tags: ["activecampaign", "mailchimp", "comparison", "email marketing", "automati
 author: "Editorial Team"
 affiliateLinks:
   - name: "Try ActiveCampaign"
-    url: "https://www.activecampaign.com"
+    url: "https://www.activecampaign.com/pricing?_r=KXM8I4YL&em=500&term=yearly&features=1"
   - name: "Try Mailchimp"
-    url: "https://mailchimp.com"
+    url: "https://mailchimp.com/pricing/marketing/?utm_source=freemium_newsletter&utm_medium=email&utm_campaign=monkey_rewards&aid=01b039409068bea2613ab9d9f&afl=1"
 ---
 
 ActiveCampaign and Mailchimp are two of the most popular email marketing platforms, but they target different user profiles. Mailchimp prioritizes ease of use and design, while ActiveCampaign focuses on automation and CRM capabilities.

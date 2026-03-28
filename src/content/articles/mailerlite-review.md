@@ -20,7 +20,7 @@ cons:
   - "Approval process for new accounts can be slow"
 affiliateLinks:
   - name: "Try MailerLite Free"
-    url: "https://www.mailerlite.com"
+    url: "https://www.mailerlite.com/?linkId=lp_170762&sourceId=2loxzatxsy&tenantId=mailerlite"
     commission: "30% lifetime recurring"
 ---
 

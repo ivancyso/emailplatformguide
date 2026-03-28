@@ -11,9 +11,9 @@ affiliateLinks:
   - name: "AWeber"
     url: "https://www.aweber.com"
   - name: "MailerLite"
-    url: "https://www.mailerlite.com"
+    url: "https://www.mailerlite.com/?linkId=lp_170762&sourceId=2loxzatxsy&tenantId=mailerlite"
   - name: "ActiveCampaign"
-    url: "https://www.activecampaign.com"
+    url: "https://www.activecampaign.com/pricing?_r=KXM8I4YL&em=500&term=yearly&features=1"
   - name: "Moosend"
     url: "https://moosend.com"
 ---

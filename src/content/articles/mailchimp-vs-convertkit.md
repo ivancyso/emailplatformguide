@@ -9,7 +9,7 @@ affiliateLinks:
   - name: "Try Kit (ConvertKit)"
     url: "https://kit.com"
   - name: "Try Mailchimp"
-    url: "https://mailchimp.com"
+    url: "https://mailchimp.com/pricing/marketing/?utm_source=freemium_newsletter&utm_medium=email&utm_campaign=monkey_rewards&aid=01b039409068bea2613ab9d9f&afl=1"
 ---
 
 Mailchimp and Kit (ConvertKit) are two of the most popular email marketing platforms — but they serve different audiences. This comparison breaks down exactly where each excels and which one is right for you.
