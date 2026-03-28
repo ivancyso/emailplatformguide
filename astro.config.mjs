@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://emailtoolsguide.com',
+  site: 'https://emailplatformguide.com',
   vite: {
     plugins: [tailwindcss()]
   },

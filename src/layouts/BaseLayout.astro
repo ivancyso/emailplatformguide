@@ -23,7 +23,7 @@ const {
   modifiedDate,
 } = Astro.props;
 
-const siteName = 'EmailToolsGuide';
+const siteName = 'EmailPlatformGuide';
 const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
 ---
 
@@ -54,7 +54,7 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
     {modifiedDate && <meta property="article:modified_time" content={modifiedDate.toISOString()} />}
 
     <!-- Plausible Analytics (uncomment when domain is active) -->
-    <!-- <script defer data-domain="emailtoolsguide.com" src="https://plausible.io/js/script.js"></script> -->
+    <!-- <script defer data-domain="emailplatformguide.com" src="https://plausible.io/js/script.js"></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -41,11 +41,11 @@ const articleSchema = {
   description,
   datePublished: pubDate.toISOString(),
   ...(updatedDate && { dateModified: updatedDate.toISOString() }),
-  author: { '@type': 'Organization', name: 'EmailToolsGuide' },
+  author: { '@type': 'Organization', name: 'EmailPlatformGuide' },
   publisher: {
     '@type': 'Organization',
-    name: 'EmailToolsGuide',
-    url: 'https://emailtoolsguide.com',
+    name: 'EmailPlatformGuide',
+    url: 'https://emailplatformguide.com',
   },
   ...(isReview && {
     reviewRating: {
