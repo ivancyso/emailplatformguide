@@ -2,8 +2,6 @@
 import BaseLayout from './BaseLayout.astro';
 import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
 import RatingBox from '../components/RatingBox.astro';
-import NewsletterSignup from '../components/NewsletterSignup.astro';
-
 interface Props {
   title: string;
   description: string;
@@ -175,10 +173,6 @@ const faqSchema = faq && faq.length > 0 ? {
           {tag}
         </span>
       ))}
-    </div>
-
-    <div class="mt-12">
-      <NewsletterSignup />
     </div>
   </article>
 </BaseLayout>
