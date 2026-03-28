@@ -16,6 +16,15 @@ affiliateLinks:
     url: "https://www.brevo.com"
   - name: "Moosend"
     url: "https://moosend.com"
+faq:
+  - question: "What is the best alternative to Mailchimp in 2026?"
+    answer: "MailerLite is the best overall Mailchimp alternative for most users, offering similar features at a significantly lower price. For creators, Kit (ConvertKit) is ideal, while ActiveCampaign is best for advanced automation needs."
+  - question: "Why are people leaving Mailchimp?"
+    answer: "The main reasons people leave Mailchimp are rising prices, a shrinking free plan (now capped at 500 contacts), and an increasingly complex interface. Many users find they can get equal or better features from competitors at a lower cost."
+  - question: "What is cheaper than Mailchimp?"
+    answer: "Nearly every major competitor is cheaper than Mailchimp. MailerLite starts at $9/month, Brevo offers pay-as-you-go pricing, and Moosend starts at $9/month. All three include features that Mailchimp locks behind its more expensive tiers."
+  - question: "Can I migrate from Mailchimp to another platform easily?"
+    answer: "Yes, most email marketing platforms offer free migration tools or concierge migration services. You can export your Mailchimp contacts as a CSV and import them into any alternative. Some platforms like ActiveCampaign even offer dedicated Mailchimp migration wizards."
 ---
 
 Mailchimp is the most recognizable name in email marketing, but it's not always the best fit. Pricing has increased significantly, the free plan has shrunk, and some features are locked behind expensive tiers.

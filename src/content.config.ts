@@ -20,6 +20,10 @@ const articles = defineCollection({
     rating: z.number().min(1).max(10).optional(),
     pros: z.array(z.string()).optional(),
     cons: z.array(z.string()).optional(),
+    faq: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional(),
   }),
 });
 

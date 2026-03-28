@@ -22,6 +22,15 @@ affiliateLinks:
   - name: "Try MailerLite Free"
     url: "https://www.mailerlite.com/?linkId=lp_170762&sourceId=2loxzatxsy&tenantId=mailerlite"
     commission: "30% lifetime recurring"
+faq:
+  - question: "Is MailerLite good for email marketing?"
+    answer: "Yes, MailerLite is one of the best email marketing platforms for small businesses and solopreneurs. It offers an excellent balance of features and affordability, with a clean drag-and-drop editor, automation, landing pages, and strong deliverability rates."
+  - question: "Is MailerLite free?"
+    answer: "MailerLite offers a generous free plan for up to 1,000 subscribers and 12,000 monthly emails. The free plan includes basic automation, landing pages, and a website builder. Paid plans start at just $9/month for additional features like dynamic content and auto-resend."
+  - question: "MailerLite vs Mailchimp — which is better?"
+    answer: "MailerLite is significantly cheaper than Mailchimp and includes features like automation on its free plan that Mailchimp charges for. Mailchimp has more email templates and a more established brand, but MailerLite offers better value for most small businesses."
+  - question: "What are MailerLite's main limitations?"
+    answer: "MailerLite's main drawbacks include fewer email template designs than competitors, a sometimes slow account approval process, and advanced features being locked behind the Growing Business plan. It also lacks a built-in CRM, so you may need a separate tool for sales tracking."
 ---
 
 MailerLite has quietly become one of the most popular email marketing platforms, and for good reason: it offers an impressive feature set at prices that undercut nearly every competitor. But is affordable good enough?

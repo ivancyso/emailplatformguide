@@ -14,6 +14,15 @@ affiliateLinks:
     url: "https://www.aweber.com"
   - name: "Brevo"
     url: "https://www.brevo.com"
+faq:
+  - question: "What is the best free email marketing tool in 2026?"
+    answer: "Systeme.io offers the most generous free plan with 2,000 subscribers and unlimited emails. For a more traditional email marketing experience, MailerLite's free plan (1,000 subscribers, 12,000 emails) includes automation and landing pages, making it the best all-around free option."
+  - question: "Is there a completely free email marketing service?"
+    answer: "Several platforms offer permanently free plans, not just trials. Systeme.io, Kit, MailerLite, AWeber, and Brevo all have free tiers. However, free plans have subscriber and feature limits. For most users, a free plan is sufficient until you reach 500-1,000 subscribers."
+  - question: "What are the limitations of free email marketing plans?"
+    answer: "Free plans typically cap your subscriber count (500-2,000), limit monthly email sends, restrict access to automation and A/B testing, and may include the platform's branding on your emails. As your list grows, upgrading to a paid plan becomes necessary."
+  - question: "When should I upgrade from a free email marketing plan?"
+    answer: "Upgrade when you hit the subscriber limit, need advanced automation sequences, want to remove platform branding from your emails, or require detailed analytics and A/B testing. Most businesses reach this point within 6-12 months of consistent list building."
 ---
 
 You don't need to spend money to start email marketing. Several platforms offer genuinely useful free plans — not just trials, but permanent free tiers with enough features to grow a real audience.

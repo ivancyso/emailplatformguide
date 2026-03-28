@@ -16,6 +16,7 @@ interface Props {
   pros?: string[];
   cons?: string[];
   affiliateLinks?: { name: string; url: string; commission?: string }[];
+  faq?: { question: string; answer: string }[];
 }
 
 const {
@@ -30,6 +31,7 @@ const {
   pros,
   cons,
   affiliateLinks = [],
+  faq,
 } = Astro.props;
 
 const isReview = category === 'review' && rating !== undefined;
@@ -56,6 +58,19 @@ const articleSchema = {
     },
   }),
 };
+
+const faqSchema = faq && faq.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map(item => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+} : null;
 ---
 
 <BaseLayout
@@ -66,6 +81,9 @@ const articleSchema = {
   modifiedDate={updatedDate}
 >
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  {faqSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  )}
 
   <article class="max-w-3xl mx-auto px-4 py-8">
     <header class="mb-8">
@@ -118,6 +136,18 @@ const articleSchema = {
       prose-th:bg-surface prose-th:p-3 prose-th:text-left
       prose-td:p-3 prose-td:border-t prose-td:border-border">
       <slot />
+
+      {faq && faq.length > 0 && (
+        <section class="mt-12">
+          <h2>Frequently Asked Questions</h2>
+          {faq.map(item => (
+            <div class="mb-6">
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </div>
+          ))}
+        </section>
+      )}
     </div>
 
     {affiliateLinks.length > 0 && (

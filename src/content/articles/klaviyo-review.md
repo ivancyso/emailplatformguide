@@ -21,6 +21,15 @@ cons:
 affiliateLinks:
   - name: "Try Klaviyo Free"
     url: "https://www.klaviyo.com/pricing?utm_source=0010V00002OetPf&utm_medium=partner&emailListSize=0&smsContacts=0"
+faq:
+  - question: "Is Klaviyo worth the price?"
+    answer: "Klaviyo is worth it for ecommerce businesses doing $500K+ in annual revenue where the advanced segmentation and predictive analytics can drive meaningful ROI. For smaller stores or non-ecommerce businesses, more affordable alternatives like MailerLite or Kit offer better value."
+  - question: "Is Klaviyo better than Mailchimp for ecommerce?"
+    answer: "Yes, Klaviyo is significantly better than Mailchimp for ecommerce. Its deep Shopify and WooCommerce integrations, purchase-based segmentation, and pre-built ecommerce flows outperform Mailchimp's more general-purpose approach. However, Klaviyo costs more at every tier."
+  - question: "How much does Klaviyo cost?"
+    answer: "Klaviyo offers a free plan for up to 250 contacts. Paid plans start at $20/month for 251-500 contacts and scale based on list size. At 10,000 contacts, expect to pay around $150/month. Adding SMS marketing increases the cost further."
+  - question: "Can I use Klaviyo without an ecommerce store?"
+    answer: "You can, but Klaviyo's biggest advantages — purchase tracking, product recommendations, and predictive analytics — require ecommerce data. Without a store integration, you are paying a premium for features you cannot fully use. Non-ecommerce businesses are better served by Kit or ActiveCampaign."
 ---
 
 Klaviyo has become the default email marketing platform for serious ecommerce businesses. If you run an online store, you have almost certainly heard the name. But is it worth the price — especially when competitors like Mailchimp and ActiveCampaign offer similar features at lower price points?

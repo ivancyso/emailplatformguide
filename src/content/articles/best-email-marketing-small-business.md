@@ -14,6 +14,15 @@ affiliateLinks:
     url: "https://www.brevo.com"
   - name: "Kit (ConvertKit)"
     url: "https://kit.com"
+faq:
+  - question: "What is the best email marketing platform for small business?"
+    answer: "MailerLite is the best overall choice for small businesses thanks to its low pricing, generous free plan, and easy-to-use interface. AWeber is a strong runner-up for established businesses that need robust customer support and proven deliverability."
+  - question: "How much should a small business spend on email marketing?"
+    answer: "Most small businesses can start for free and should expect to spend $9-50/month as they grow. A good rule of thumb is to allocate 5-10% of your marketing budget to email. The ROI is typically excellent, averaging $36-42 for every $1 spent."
+  - question: "Do small businesses really need email marketing?"
+    answer: "Absolutely. Email marketing is one of the most cost-effective ways for small businesses to retain customers, drive repeat purchases, and build relationships. Unlike social media, you own your email list and can reach customers directly without paying for ads."
+  - question: "What features should a small business look for in email marketing software?"
+    answer: "Small businesses should prioritize ease of use, affordable pricing that scales, basic automation (welcome sequences, abandoned cart), sign-up forms, and good deliverability. Avoid platforms with features you will not use, as they add unnecessary complexity and cost."
 ---
 
 Small businesses need email marketing that's affordable, easy to use, and effective. You don't need enterprise features — you need something that lets you stay in touch with customers, promote your services, and grow your list without spending hours learning complex software.
@@ -55,7 +64,7 @@ If your business has been around for a while and you value reliability over flas
 - Smart Designer creates branded templates automatically
 - Proven deliverability over 25+ years
 
-**The catch:** The interface feels older than newer competitors, and automation isn't as powerful as ActiveCampaign.
+**The catch:** The interface feels older than newer competitors, and automation isn't as powerful as [ActiveCampaign](/activecampaign-vs-mailchimp).
 
 **Best for:** Established businesses that want proven reliability, strong support, and professional templates.
 
@@ -76,7 +85,7 @@ Brevo stands out by combining email marketing with SMS, WhatsApp, and live chat 
 
 ## 4. Kit (ConvertKit) — Best for Service Businesses with Content
 
-If your small business relies on content marketing — blogging, newsletters, or educational content — Kit's creator-focused approach works well for service businesses too.
+If your small business relies on content marketing -- blogging, newsletters, or educational content -- [Kit's](/convertkit-review) creator-focused approach works well for service businesses too.
 
 **Why small businesses love it:**
 - Excellent automation for lead nurturing
@@ -96,7 +105,7 @@ Before choosing a platform, consider:
 2. **Budget:** Costs scale with your subscriber count. Plan for growth.
 3. **Features you actually need:** Most small businesses need good templates, basic automation, and reliable delivery. Don't pay for features you won't use.
 4. **Ease of use:** If you're not technically savvy, prioritize platforms with intuitive interfaces and good support.
-5. **Integration:** Make sure it connects with your existing tools (website, CRM, ecommerce platform).
+5. **Integration:** Make sure it connects with your existing tools (website, CRM, ecommerce platform). If you run an ecommerce store, consider a specialized platform like [Klaviyo](/klaviyo-review) or [Omnisend](/omnisend-review).
 
 ## Start Here
 
