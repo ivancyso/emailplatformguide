@@ -56,8 +56,14 @@ const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
     {publishDate && <meta property="article:published_time" content={publishDate.toISOString()} />}
     {modifiedDate && <meta property="article:modified_time" content={modifiedDate.toISOString()} />}
 
-    <!-- Plausible Analytics (uncomment when domain is active) -->
-    <!-- <script defer data-domain="emailplatformguide.com" src="https://plausible.io/js/script.js"></script> -->
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVX3M3MJ8K"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XVX3M3MJ8K');
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
