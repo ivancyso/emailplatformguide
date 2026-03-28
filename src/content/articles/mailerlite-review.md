@@ -1,7 +1,7 @@
 ---
 title: "MailerLite Review 2026: The Best Budget Option?"
 description: "MailerLite offers powerful email marketing at a fraction of competitors' prices. But is it good enough? Our hands-on review covers everything you need to know."
-pubDate: 2026-03-13
+pubDate: 2026-03-06
 category: review
 tags: ["mailerlite", "email marketing", "review", "budget"]
 author: "Editorial Team"
@@ -77,7 +77,7 @@ MailerLite's deliverability rates are consistently above average. They use:
 - Built-in list cleaning tools
 - Automatic bounce and complaint handling
 
-In our testing, inbox placement rates were comparable to AWeber and Mailchimp — both known for strong deliverability.
+In our testing, inbox placement rates were comparable to [AWeber](/aweber-review) and Mailchimp -- both known for strong deliverability.
 
 ## The Approval Process
 
@@ -89,7 +89,7 @@ One notable quirk: MailerLite has a manual approval process for new accounts. Wh
 - Budget-conscious businesses and solopreneurs
 - Bloggers who want email + website in one tool
 - Anyone [switching from Mailchimp](/mailchimp-alternatives) to save money
-- Small businesses under 10,000 subscribers
+- Small businesses under 10,000 subscribers -- see our [best email marketing for small business](/best-email-marketing-small-business) guide
 - Users who want automation on a free plan
 
 **Not ideal for:**

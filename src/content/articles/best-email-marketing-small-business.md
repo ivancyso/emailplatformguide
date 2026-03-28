@@ -1,7 +1,7 @@
 ---
 title: "Best Email Marketing for Small Business (2026 Guide)"
 description: "The top email marketing platforms for small businesses compared — from affordable starters to feature-rich solutions. Find the right fit for your business."
-pubDate: 2026-03-26
+pubDate: 2026-03-24
 category: roundup
 tags: ["email marketing", "small business", "best of", "comparison"]
 author: "Editorial Team"

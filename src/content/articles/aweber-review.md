@@ -1,7 +1,7 @@
 ---
 title: "AWeber Review 2026: Pros, Cons & Honest Verdict"
 description: "Is AWeber still worth it in 2026? Our hands-on review covers features, pricing, deliverability, and who AWeber is best for."
-pubDate: 2026-03-15
+pubDate: 2026-03-08
 category: review
 tags: ["aweber", "email marketing", "review", "small business"]
 author: "Editorial Team"
@@ -41,7 +41,7 @@ AWeber's biggest strength is its template library — over 700 designs covering 
 With 25+ years of experience, AWeber has established strong relationships with ISPs and email providers. Their deliverability rates are consistently among the best in the industry.
 
 ### Automation
-AWeber offers tag-based automation with visual workflows. It's functional and handles common scenarios well (welcome series, abandoned cart, re-engagement). However, it lacks the sophistication of ActiveCampaign or Kit's automation builders.
+AWeber offers tag-based automation with visual workflows. It's functional and handles common scenarios well (welcome series, abandoned cart, re-engagement). However, it lacks the sophistication of [ActiveCampaign](/activecampaign-vs-mailchimp) or Kit's automation builders.
 
 ### Landing Pages
 AWeber includes a landing page builder, though it's more basic than dedicated tools. It works for simple opt-in pages but won't replace a tool like Leadpages for complex marketing pages.
@@ -60,7 +60,7 @@ Unlike many competitors, AWeber explicitly allows affiliate marketing content in
 | Plus | Up to 5,000 | $70 |
 | Plus | Up to 10,000 | $100 |
 
-The free plan includes up to 500 subscribers with basic features. The Plus plan adds automation, split testing, and advanced analytics.
+The free plan includes up to 500 subscribers with basic features -- for more free plan options, see our [best free email marketing tools](/best-free-email-marketing) guide. The Plus plan adds automation, split testing, and advanced analytics.
 
 ## Who Should Use AWeber?
 
