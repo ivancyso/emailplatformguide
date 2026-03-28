@@ -1,6 +1,6 @@
 ---
 title: "Klaviyo Review 2026: Best for Ecommerce Email Marketing?"
-description: "A hands-on review of Klaviyo — the email and SMS marketing platform built for ecommerce. Features, pricing, pros, cons, and who it's best for."
+description: "Read our hands-on Klaviyo review for 2026. We cover ecommerce email and SMS features, pricing, pros, cons, and whether Klaviyo is worth it for your store."
 pubDate: 2026-03-20
 category: review
 tags: ["klaviyo", "email marketing", "ecommerce", "review", "sms marketing"]

@@ -1,6 +1,6 @@
 ---
-title: "Omnisend Review 2026: Best for Ecommerce Marketing Automation?"
-description: "Omnisend combines email, SMS, and push notifications for ecommerce stores. Our hands-on review covers features, pricing, and how it compares to Klaviyo and Mailchimp."
+title: "Omnisend Review 2026: Ecommerce Automation Tested"
+description: "Our hands-on Omnisend review covers email, SMS, and push notifications for ecommerce. See features, pricing, and how it compares to Klaviyo and Mailchimp."
 pubDate: 2026-03-22
 category: review
 tags: ["omnisend", "email marketing", "ecommerce", "review", "marketing automation"]

@@ -1,6 +1,6 @@
 ---
 title: "Kit (ConvertKit) Review 2026: Is It Worth It?"
-description: "A hands-on review of Kit (formerly ConvertKit) — features, pricing, pros, cons, and who it's best for. Updated for 2026."
+description: "Read our hands-on Kit (ConvertKit) review for 2026. We cover features, pricing, pros, cons, and who benefits most. Find out if Kit is worth it for creators."
 pubDate: 2026-03-04
 category: review
 tags: ["convertkit", "kit", "email marketing", "review", "creators"]

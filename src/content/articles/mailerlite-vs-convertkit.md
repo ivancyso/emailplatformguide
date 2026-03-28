@@ -1,6 +1,6 @@
 ---
-title: "MailerLite vs ConvertKit (Kit): Which Is Right for You in 2026?"
-description: "A head-to-head comparison of MailerLite and ConvertKit (Kit) — pricing, features, automation, and which one is better for bloggers, creators, and small businesses."
+title: "MailerLite vs ConvertKit (Kit): 2026 Comparison"
+description: "Compare MailerLite vs ConvertKit (Kit) on pricing, features, and automation. See which email platform is better for bloggers, creators, and small businesses."
 pubDate: 2026-03-27
 category: comparison
 tags: ["mailerlite", "convertkit", "kit", "comparison", "email marketing"]
