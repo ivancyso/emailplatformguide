@@ -86,6 +86,24 @@ const articleSchema = {
       <p class="text-lg text-text-muted">{description}</p>
     </header>
 
+    {affiliateLinks.length > 0 && (
+      <div class="mb-8 p-5 bg-primary/5 border border-primary/20 rounded-xl">
+        <p class="text-sm font-semibold text-text mb-3">Top Picks from This Article</p>
+        <div class="flex flex-wrap gap-3">
+          {affiliateLinks.map(link => (
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark transition-colors"
+            >
+              {link.name} &rarr;
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
     <AffiliateDisclosure />
 
     {isReview && rating && pros && cons && (
