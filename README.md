@@ -1,43 +1,33 @@
-# Astro Starter Kit: Minimal
+# Email Platform Guide
 
-```sh
-npm create astro@latest -- --template minimal
+Astro site with Markdown content under `src/content/articles`, plus a local bulk generator for creating many SEO blog posts from keyword CSV inputs.
+
+## Commands
+
+- `npm install` - install dependencies
+- `npm run dev` - start local Astro dev server
+- `npm run build` - production build
+- `npm run preview` - preview production build
+- `npm run generate:posts` - generate posts locally using OpenRouter
+
+## Bulk blog generation
+
+1. Copy `.env.example` to `.env` and fill values.
+2. Put your keywords in `25.csv` (one per line or comma-separated).
+3. Run:
+
+```bash
+npm run generate:posts
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Default generation behavior:
+- target total posts: `2500`
+- rate limit: `50` posts/minute
+- concurrency: `10`
+- model: `nx-ai/grok-4.1-fast`
 
-## 🚀 Project Structure
+### Bing IndexNow support
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+If `BING_INDEXNOW_KEY` is set, generation will:
+- create `public/<key>.txt`
+- submit each generated post URL to Bing IndexNow
