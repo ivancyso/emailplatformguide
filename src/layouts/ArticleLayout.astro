@@ -120,8 +120,6 @@ const faqSchema = faq && faq.length > 0 ? {
       </div>
     )}
 
-    <AffiliateDisclosure />
-
     {isReview && rating && pros && cons && (
       <RatingBox rating={rating} pros={pros} cons={cons} />
     )}
@@ -177,6 +175,8 @@ const faqSchema = faq && faq.length > 0 ? {
         Compare all 9 email marketing platforms side-by-side &rarr;
       </a>
     </div>
+
+    <AffiliateDisclosure />
 
     <div class="mt-8 flex flex-wrap gap-2">
       {tags.map(tag => (
