@@ -1,36 +1,281 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 
 const articles = (await getCollection('articles'))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 12);
+
+const tools = [
+  {
+    name: 'MailerLite',
+    url: 'https://www.mailerlite.com/?linkId=lp_170762&sourceId=2loxzatxsy&tenantId=mailerlite',
+    rating: 8.0,
+    bestFor: 'Budget-conscious businesses',
+    startingPrice: '$9/mo',
+    freePlan: 'Yes (1,000 subs)',
+    highlights: ['Drag-and-drop editor', 'Landing pages & forms', 'Automation workflows', 'Website builder included'],
+    reviewSlug: '/mailerlite-review',
+  },
+  {
+    name: 'Kit (ConvertKit)',
+    url: 'https://kit.com',
+    rating: 8.5,
+    bestFor: 'Creators & bloggers',
+    startingPrice: '$29/mo',
+    freePlan: 'Yes (1,000 subs)',
+    highlights: ['Visual automation builder', 'Creator-focused features', 'Tag-based subscriber management', 'Commerce & digital products'],
+    reviewSlug: '/convertkit-review',
+  },
+  {
+    name: 'Klaviyo',
+    url: 'https://www.klaviyo.com/pricing?utm_source=0010V00002OetPf&utm_medium=partner&emailListSize=0&smsContacts=0',
+    rating: 8.5,
+    bestFor: 'Ecommerce stores',
+    startingPrice: '$20/mo',
+    freePlan: 'Yes (250 contacts)',
+    highlights: ['Deep Shopify integration', 'Predictive analytics', 'Email + SMS marketing', 'Advanced segmentation'],
+    reviewSlug: '/klaviyo-review',
+  },
+  {
+    name: 'ActiveCampaign',
+    url: 'https://www.activecampaign.com/pricing?_r=KXM8I4YL&em=500&term=yearly&features=1',
+    rating: null,
+    bestFor: 'Advanced automation',
+    startingPrice: '$29/mo',
+    freePlan: 'No (14-day trial)',
+    highlights: ['800+ automation recipes', 'Built-in CRM', 'Lead scoring', 'Split automation paths'],
+    reviewSlug: null,
+  },
+  {
+    name: 'Omnisend',
+    url: 'https://your.omnisend.com/c/2717052/1837188/21260',
+    rating: 8.0,
+    bestFor: 'Ecommerce multi-channel',
+    startingPrice: '$16/mo',
+    freePlan: 'Yes (250 contacts)',
+    highlights: ['Email + SMS + push notifications', 'Pre-built ecommerce workflows', 'Shopify & WooCommerce native', 'Product recommendations'],
+    reviewSlug: '/omnisend-review',
+  },
+  {
+    name: 'AWeber',
+    url: 'https://www.aweber.com',
+    rating: 7.5,
+    bestFor: 'Small businesses',
+    startingPrice: '$19/mo',
+    freePlan: 'Yes (500 subs)',
+    highlights: ['700+ email templates', 'Canva integration', 'AMP emails', 'Reliable deliverability'],
+    reviewSlug: '/aweber-review',
+  },
+  {
+    name: 'Mailchimp',
+    url: 'https://mailchimp.com/pricing/marketing/?utm_source=freemium_newsletter&utm_medium=email&utm_campaign=monkey_rewards&aid=01b039409068bea2613ab9d9f&afl=1',
+    rating: null,
+    bestFor: 'All-in-one marketing',
+    startingPrice: '$13/mo',
+    freePlan: 'Yes (500 contacts)',
+    highlights: ['Brand recognition', 'Multivariate testing', 'Content optimizer', 'Wide integration ecosystem'],
+    reviewSlug: null,
+  },
+  {
+    name: 'Brevo (Sendinblue)',
+    url: 'https://www.brevo.com',
+    rating: null,
+    bestFor: 'Transactional email + marketing',
+    startingPrice: '$9/mo',
+    freePlan: 'Yes (300 emails/day)',
+    highlights: ['Unlimited contacts on all plans', 'Email + SMS + WhatsApp', 'CRM included', 'Transactional email API'],
+    reviewSlug: null,
+  },
+  {
+    name: 'Moosend',
+    url: 'https://moosend.com',
+    rating: null,
+    bestFor: 'Affordable automation',
+    startingPrice: '$9/mo',
+    freePlan: 'No (30-day trial)',
+    highlights: ['Simple workflow builder', 'Landing pages', 'Ecommerce AI recommendations', 'Competitive pricing'],
+    reviewSlug: null,
+  },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Best Email Marketing Tools Compared',
+  description: 'A comprehensive comparison of the top email marketing platforms for businesses of all sizes.',
+  numberOfItems: tools.length,
+  itemListElement: tools.map((tool, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: tool.name,
+    url: tool.reviewSlug ? `https://www.emailplatformguide.com${tool.reviewSlug}` : tool.url,
+  })),
+};
 ---
 
 <BaseLayout
-  title="EmailPlatformGuide - Honest Email Marketing Software Reviews"
-  description="In-depth reviews, comparisons, and guides to help you choose the best email marketing software for your business. Tested by experts."
+  title="EmailPlatformGuide - Compare the Best Email Marketing Tools (2026)"
+  description="Side-by-side comparison of 9 top email marketing platforms with pricing, features, free plans, and honest ratings. Find your perfect fit."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
   <section class="max-w-5xl mx-auto px-4 py-12">
-    <div class="text-center mb-12">
+    <div class="text-center mb-10">
       <h1 class="text-4xl md:text-5xl font-bold mb-4">
-        Find the <span class="text-primary">Right Email Marketing Tool</span>
+        Compare the Best <span class="text-primary">Email Marketing Tools</span>
       </h1>
       <p class="text-lg text-text-muted max-w-2xl mx-auto">
-        Honest, hands-on reviews and comparisons of the top email marketing platforms. No fluff, no bias — just what works.
+        We tested every platform on this list. Here's how they stack up on pricing, features, and ease of use — so you can pick the right one without the guesswork.
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-6">
-      {articles.map((article) => (
-        <ArticleCard
-          title={article.data.title}
-          description={article.data.description}
-          slug={article.id}
-          pubDate={article.data.pubDate}
-          category={article.data.category}
-        />
+    <AffiliateDisclosure />
+
+    <!-- Quick comparison table -->
+    <div class="overflow-x-auto mb-12">
+      <table class="w-full text-sm border border-border rounded-xl overflow-hidden">
+        <thead>
+          <tr class="bg-primary/5">
+            <th class="text-left p-3 font-semibold">Platform</th>
+            <th class="text-left p-3 font-semibold">Best For</th>
+            <th class="text-left p-3 font-semibold">Starting Price</th>
+            <th class="text-left p-3 font-semibold">Free Plan</th>
+            <th class="text-center p-3 font-semibold">Rating</th>
+            <th class="text-center p-3 font-semibold"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {tools.map((tool) => (
+            <tr class="border-t border-border hover:bg-primary/5 transition-colors">
+              <td class="p-3 font-semibold">{tool.name}</td>
+              <td class="p-3 text-text-muted">{tool.bestFor}</td>
+              <td class="p-3">{tool.startingPrice}</td>
+              <td class="p-3">{tool.freePlan}</td>
+              <td class="p-3 text-center">
+                {tool.rating ? (
+                  <span class="inline-flex items-center justify-center bg-primary/10 text-primary font-bold text-xs px-2 py-1 rounded-full">
+                    {tool.rating}/10
+                  </span>
+                ) : (
+                  <span class="text-text-muted">—</span>
+                )}
+              </td>
+              <td class="p-3 text-center">
+                <a
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="inline-block bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-lg hover:bg-primary-dark transition-colors whitespace-nowrap"
+                >
+                  Try Free &rarr;
+                </a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Detailed cards -->
+    <h2 class="text-2xl font-bold mb-6">Platform Details</h2>
+
+    <div class="grid gap-6">
+      {tools.map((tool, i) => (
+        <div class="bg-white border border-border rounded-xl p-6 hover:border-primary/40 transition-all">
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+            <div>
+              <div class="flex items-center gap-3 mb-1">
+                <h3 class="text-xl font-bold">{i + 1}. {tool.name}</h3>
+                {tool.rating && (
+                  <span class="inline-flex items-center bg-primary/10 text-primary text-xs font-bold px-2 py-0.5 rounded-full">
+                    {tool.rating}/10
+                  </span>
+                )}
+              </div>
+              <p class="text-text-muted text-sm">Best for: {tool.bestFor}</p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0">
+              {tool.reviewSlug && (
+                <a
+                  href={tool.reviewSlug}
+                  class="text-sm text-primary font-medium hover:underline"
+                >
+                  Read Review
+                </a>
+              )}
+              <a
+                href={tool.url}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="inline-flex items-center gap-1 bg-primary text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors"
+              >
+                Try {tool.name} &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-sm font-semibold mb-2">Key Features</p>
+              <ul class="text-sm text-text-muted space-y-1">
+                {tool.highlights.map((h) => (
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary mt-0.5">&#10003;</span>
+                    <span>{h}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <div class="grid grid-cols-2 gap-3 text-sm">
+                <div class="bg-surface rounded-lg p-3">
+                  <p class="text-text-muted text-xs mb-1">Starting Price</p>
+                  <p class="font-semibold">{tool.startingPrice}</p>
+                </div>
+                <div class="bg-surface rounded-lg p-3">
+                  <p class="text-text-muted text-xs mb-1">Free Plan</p>
+                  <p class="font-semibold">{tool.freePlan}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       ))}
+    </div>
+
+    <!-- CTA section -->
+    <div class="mt-12 text-center bg-primary/5 border border-primary/20 rounded-xl p-8">
+      <h2 class="text-2xl font-bold mb-3">Need a Deeper Breakdown?</h2>
+      <p class="text-text-muted mb-6 max-w-xl mx-auto">
+        Read our in-depth roundup articles or dive into any head-to-head comparison below.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="/best-email-marketing-software" class="inline-flex items-center gap-2 bg-primary text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-primary-dark transition-colors">
+          Best Email Marketing Software &rarr;
+        </a>
+        <a href="/best-free-email-marketing" class="inline-flex items-center gap-2 bg-white text-primary font-semibold px-5 py-2.5 rounded-lg border border-primary hover:bg-primary/5 transition-colors">
+          Best Free Plans &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Latest articles -->
+    <div class="mt-16">
+      <h2 class="text-2xl font-bold mb-6">Latest Reviews & Comparisons</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        {articles.map((article) => (
+          <ArticleCard
+            title={article.data.title}
+            description={article.data.description}
+            slug={article.id}
+            pubDate={article.data.pubDate}
+            category={article.data.category}
+          />
+        ))}
+      </div>
     </div>
   </section>
 </BaseLayout>
